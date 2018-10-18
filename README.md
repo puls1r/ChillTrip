@@ -9,8 +9,8 @@ Adapun tujuan utama pembuatan Chill Trip yaitu sebagai marketplace paket travel.
 # Fungsi
 
 Adapun beberapa fungsi dalam pembuatan web ini yaitu :
-a. Memudahkan Traveler untuk mencari tujuan wisata
-b. Memudahkan penyedia jasa paket trip/travel untuk mempublikasikan jasanya 
+- Memudahkan Traveler untuk mencari tujuan wisata
+- Memudahkan penyedia jasa paket trip/travel untuk mempublikasikan jasanya 
 
 # Target Pengguna
 
