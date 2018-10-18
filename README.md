@@ -3,16 +3,18 @@ Muhammad Hanif 140810170033
 
 # CHILL TRIP
 	
-	Chill Trip merupakan Webpage penyedia jasa paket travel. Keunikan dari Chill Trip adalah juga sebagai marketplace paket travel yang memungkinkan penyedia jasa travel lain ikut andil didalamnya.
+Chill Trip merupakan Webpage penyedia jasa paket travel. Keunikan dari Chill Trip adalah juga sebagai marketplace paket travel yang memungkinkan penyedia jasa travel lain ikut andil didalamnya.
 
 # Tujuan
 	
-	Adapun tujuan utama pembuatan Chill Trip yaitu sebagai marketplace paket travel.
+Adapun tujuan utama pembuatan Chill Trip yaitu sebagai marketplace paket travel.
 
 # Fungsi
-       Adapun beberapa fungsi dalam pembuatan web ini yaitu :
-	a. Memudahkan Traveler untuk mencari tujuan wisata
-	b. Memudahkan penyedia jasa paket trip/travel untuk mempublikasikan jasanya 
+
+Adapun beberapa fungsi dalam pembuatan web ini yaitu :
+a. Memudahkan Traveler untuk mencari tujuan wisata
+b. Memudahkan penyedia jasa paket trip/travel untuk mempublikasikan jasanya 
 
 # Target Pengguna
-	Target Pengguna Chill Trip adalah masyarakat yang sedang mencari tempat liburan.
+
+Target Pengguna Chill Trip adalah masyarakat yang sedang mencari tempat liburan.
