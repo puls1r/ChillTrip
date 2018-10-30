@@ -22,8 +22,11 @@ body {
 
 .nav a:hover {
     background-color: #111;
-
 	}
+	
+.nav a.active {
+	background-color: purple;
+}
 .intro {
 	margin: 10px;
 	background-color: #eaded2;
