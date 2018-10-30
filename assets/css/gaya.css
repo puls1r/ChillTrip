@@ -1,4 +1,6 @@
 body {
+	background-color: #fffdf5;
+	padding:0;
 	margin:0;
 	font-family: "Verdana", sans;
 }
@@ -24,11 +26,37 @@ body {
 	}
 .intro {
 	margin: 10px;
-	border: solid 2px;
+	background-color: #eaded2;
 }
 
 .intro div {
 	text-align:center;
 }
 
+.intro div h1{
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+}
 
+.intro div p{
+	font-size: 17px;
+	color: white;
+}
+
+.center {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;	
+}
+
+.spacing {
+	border-collapse: separate;
+	border-spacing: 5px 10px;
+}
+.row table{
+	margin-left:auto;
+	margin-right:auto; 
+	border-collapse:collapse;
+}
