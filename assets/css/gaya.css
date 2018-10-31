@@ -4,28 +4,35 @@ body {
 	margin:0;
 	font-family: "Verdana", sans;
 }
+.row{
+	margin:0;
+}
 .navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #fffdf5;
+	border: none;
+	border-bottom: solid #eaeaeb 0.5px;
 }
 .nav{
 	padding:0;
 }
 .nav a {
     display: block;
-    color: white;
+    color: #a1aca3;
     text-align: center;
 	text-decoration: none;
 }
 
 .nav a:hover {
-    background-color: #111;
+    color: #4e342e;
 	}
 	
 .nav a.active {
-	background-color: purple;
+	color: #0fb287;
+	border:none;
+	border-bottom: solid #0fb287 0.5px;
 }
 .intro {
 	margin: 10px;
@@ -58,6 +65,7 @@ body {
 	border-collapse: separate;
 	border-spacing: 5px 10px;
 }
+
 .row table{
 	margin-left:auto;
 	margin-right:auto; 
