@@ -53,24 +53,34 @@ body {
 	font-size: 17px;
 	color: white;
 }
+.kepala a{
+	display:block;
+	font-size:40px;
+	text-align:center;
+	text-decoration:none;
+	color:aqua;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.a-decor{
+	width:30%;
+	text-decoration:none;
+	color:blue;
+	margin-left:auto;
+	margin-right:auto;
+}
+.form-login{
+	margin-left:80px;
+	width:50%;
+	border: solid 2px;
+}
+
 
 .center {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;	
-}
-.right {
-	display:block;
-	right: 0px;
-	padding: 10px;
-	width: 50%;	
-}
-
-.left {
-	display:block;
-	left: 0px;
-	padding: 10px;
 	width: 50%;	
 }
 
