@@ -60,6 +60,19 @@ body {
 	margin-right: auto;
 	width: 50%;	
 }
+.right {
+	display:block;
+	right: 0px;
+	padding: 10px;
+	width: 50%;	
+}
+
+.left {
+	display:block;
+	left: 0px;
+	padding: 10px;
+	width: 50%;	
+}
 
 .spacing {
 	border-collapse: separate;
