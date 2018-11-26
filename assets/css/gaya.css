@@ -4,6 +4,7 @@ body {
 	margin:0;
 	font-family: "Verdana", sans;
 }
+
 .row{
 	margin:0;
 }
@@ -64,19 +65,49 @@ body {
 }
 
 .a-decor{
-	width:30%;
+	display:inline;
 	text-decoration:none;
 	color:blue;
+}
+
+.rememberme{
+	display:inline-block;
+	margin-left:40px;
+	margin-bottom:15px;
+	margin-top:8px;
+	width:50%;
+	font-size:15px;
+}
+.form-login{
+	background-color:#fffdf5;
+	margin-left:80px;
+	width:70%;
+	border: solid #819c9c 0.5px;
+	border-radius:3px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.form-login input{
+	display:block;
+	padding:10px;
 	margin-left:auto;
 	margin-right:auto;
 }
-.form-login{
-	margin-left:80px;
-	width:50%;
-	border: solid 2px;
+.form-login input[type="submit"]{
+	border:none;
+	background-color:green;
+	width:339px;
+	padding:10px;
+	margin: auto;
+	color:white;
+	border-radius:2px;
 }
-
-
+.form-login input[type="submit"]:hover{
+	background-color:#209aa4;
+	
+}
+.form-login input[type="checkbox"]{
+	display:inline;
+}
 .center {
 	display:block;
 	margin-left: auto;
