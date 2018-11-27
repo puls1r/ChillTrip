@@ -66,24 +66,27 @@ body {
 }
 
 .a-decor{
-	display:inline;
+	display:inline-block;
 	text-decoration:none;
-	color:blue;
+	color:green;
 }
-
+.ex-button{
+	display:block;
+	border: solid 2px;
+}
 .rememberme{
 	display:inline-block;
-	margin-left:40px;
+	margin-left:56px;
 	margin-bottom:15px;
-	margin-top:8px;
-	width:50%;
+	margin-top:24px;
+	width:60%;
 	font-size:15px;
 }
 .form-login{
 	background-color:#fffdf5;
-	margin-left:80px;
-	width:70%;
-	border: solid #819c9c 0.5px;
+}
+.form-content{
+	border: solid #eabe91 0.5px;
 	border-radius:3px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
 }
@@ -101,6 +104,9 @@ body {
 	margin: auto;
 	color:white;
 	border-radius:2px;
+}
+#gambar-logo {
+	background: #FFCC99;
 }
 .form-login input[type="submit"]:hover{
 	background-color:#209aa4;
@@ -120,7 +126,17 @@ body {
 	border-collapse: separate;
 	border-spacing: 5px 10px;
 }
-
+.footer-mini{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	border:none;
+	border-top:solid #eaeaeb 0.5px;
+	padding:10px;
+	padding-left:30px;
+	font-size:14px
+}
 .row table{
 	margin-left:auto;
 	margin-right:auto; 

@@ -6,34 +6,46 @@
 <link href="assets/css/gaya.css" rel="stylesheet" type="text/css">
 <link href="assets/css/footer.css" rel ="stylesheet" type="text/css">
 <link href="assets/css/form.css" rel ="stylesheet" type="text/css">
-
-
+<link href="assets/css/checkbox.css" rel ="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <div class="container-fluid" style="padding:0;margin:0">
 	<div class=" kepala row" style="margin:20px">
-		<a href="file:///C:/Users/COMPAQ/Documents/PWeb/GitHub/projectWeb/mainpage.html"><b>Chill Trip</b></a>
+		<a href="mainpage.html"><b>Chill Trip</b></a>
 	</div>
-	<div class="row" style="padding-top:15px;padding-bottom:90px">
-		<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><img class="center" src="assets/img/logo.png" alt="Logo" style="height:500px; width:450px;padding:5px">
-		</div>
-		<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
-			<div class="form-login">
-				<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
-				<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="login.php">Register</a></p>
-				<input type="text" placeholder="Username" name="username" size="50"><br>
-				<input type="password" placeholder="Password" name="pw" size="50">
-				<div class="rememberme"><input type="checkbox">  Remember me</div>
-				<input type="submit" name="submit" value="Sign in"><br><br>				
+	<div class="row" style="margin-top:15px;">
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+		<div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
+			<div class="form-content row">
+			<div id="gambar-logo" class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><img class="center" src="assets/img/logoHfix.png">
+			</div>
+			<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+				<div class="form-login">
+					<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
+					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="login.php">Register</a></p>
+					<input type="text" placeholder="Username" name="username" size="50"><br>
+					<input type="password" placeholder="Password" name="pw" size="50">
+					<div class="row">
+						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><label class="rememberme box">Remember me<input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><a class="a-decor" style="margin-top:24px;font-size:12px">Forget your password?</a></div>
+					</div>
+					<input type="submit" name="submit" value="Sign in"><br><br>				
+				</div>
+				<ul style="list-style:none;">
+					<li><a class="ex-button"><i class="fab fa-facebook-f"></i><label>facebook<label></a>	
+				</ul>
+			</div>
 			</div>
 		</div>
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
 	</div>
 	<div class="row" style="margin:0">
 		<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">
-			<footer style="border:none;border-top:solid #eaeaeb 0.5px;padding:10px"><span>Chill Trip</span> </footer>
+			<footer class="footer-mini" style=""><span style="color:grey">&copy; 2018, Chill Trip</span> </footer>
 		</div>
 	</div>
 </div>
