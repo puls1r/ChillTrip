@@ -1,5 +1,5 @@
 .footer-distributed{
-	background-color: #FF6d4b;
+	background-color: #34dddd;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -51,7 +51,7 @@
 }
 
 .footer-distributed .footer-company-name{
-	color:  #c12500;
+	color: white;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -68,12 +68,12 @@
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
+	vertical-align: middl
 	height: 38px;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+	margin: 10px 15px;e;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -96,7 +96,7 @@
 }
 
 .footer-distributed .footer-center p a{
-	color:  #c12500;
+	color:  #212121;
 	text-decoration: none;;
 }
 

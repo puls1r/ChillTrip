@@ -1,5 +1,5 @@
 body {
-	background-color: #fffdf5;
+	background-color: white;
 	padding:0;
 	margin:0;
 	font-family: "Verdana", sans;
@@ -56,23 +56,13 @@ body {
 }
 .kepala a{
 	display:block;
-	font-size:40px;
-	text-align:center;
-	text-decoration:none;
-	color:white;
-	margin-left:auto;
-	margin-right:auto;
-	text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey, 0 0 6px rgba(0,0,0,0.2); 
+	margin:auto;
 }
 
 .a-decor{
 	display:inline-block;
 	text-decoration:none;
 	color:green;
-}
-.ex-button{
-	display:block;
-	border: solid 2px;
 }
 .rememberme{
 	display:inline-block;
@@ -83,12 +73,12 @@ body {
 	font-size:15px;
 }
 .form-login{
-	background-color:#fffdf5;
+	background-color:white;
 }
 .form-content{
-	border: solid #eabe91 0.5px;
+	border: solid #36c1c1 0.5px;
 	border-radius:3px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
 }
 .form-login input{
 	display:block;
@@ -106,7 +96,12 @@ body {
 	border-radius:2px;
 }
 #gambar-logo {
-	background: #FFCC99;
+	background: #33cccc;
+}
+
+.ex-button{
+	margin:auto;
+	padding:0;
 }
 .form-login input[type="submit"]:hover{
 	background-color:#209aa4;
@@ -128,6 +123,7 @@ body {
 }
 .footer-mini{
 	position: fixed;
+	background:white;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -141,4 +137,16 @@ body {
 	margin-left:auto;
 	margin-right:auto; 
 	border-collapse:collapse;
+}
+
+.border{
+	border: solid 1px;
+}
+
+.logo{
+	height:120px;
+}
+
+.loginpage{
+	background-color:#34dddd;
 }
