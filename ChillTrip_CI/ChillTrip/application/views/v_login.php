@@ -22,12 +22,14 @@
 		<div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
 			<div class="form-content row">
 			<div id="gambar-logo" class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
-                <a><img class="img" src="<?php echo base_url() ?>assets/img/kuota.jpg" ></a>
+				<h1 style="text-align:center;margin:0;margin-top:12px"> The World is a book</h1>
+				<img src="<?php echo base_url() ?>assets/img/buku.png" style="width:300px;height:250px">
+				<p style="text-align:center">and those who do not travel read only one page. <br>-Augustine of Hippo</p>
 			</div>
 			<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="background-color:white;">
 				<div class="form-login">
 					<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
-					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="login.php">Register</a></p>
+					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="<?php echo site_url('register') ?>">Register</a></p>
 					<input type="text" placeholder="Username" name="username" size="50"><br>
 					<input type="password" placeholder="Password" name="pw" size="50">
 					<div class="row">

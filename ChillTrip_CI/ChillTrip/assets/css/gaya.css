@@ -16,6 +16,12 @@ body {
 	border: none;
 	border-bottom: solid #eaeaeb 0.5px;
 }
+.navbar span {
+	display:inline;
+	color:white;
+	font-size:15px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .nav{
 	padding:0;
 }
@@ -74,6 +80,7 @@ body {
 }
 .form-login{
 	background-color:white;
+	margin:auto;
 }
 .form-content{
 	border: solid #36c1c1 0.5px;
@@ -88,25 +95,33 @@ body {
 }
 .form-login input[type="submit"]{
 	border:none;
-	background-color:green;
+	background-color:#34dddd;
 	width:339px;
 	padding:10px;
 	margin: auto;
 	color:white;
 	border-radius:2px;
 }
+
+.form-login input[type="submit"]:hover{
+	background-color:#209aa4;
+	
+}
 #gambar-logo {
 	background: #33cccc;
+	color:white;
+}
+
+#gambar-logo img {
+	display:block;
+	margin:auto;
 }
 
 .ex-button{
 	margin:auto;
 	padding:0;
 }
-.form-login input[type="submit"]:hover{
-	background-color:#209aa4;
-	
-}
+
 .form-login input[type="checkbox"]{
 	display:inline;
 }
@@ -148,5 +163,6 @@ body {
 }
 
 .loginpage{
-	background-color:#4abdac;
+	background-color:#34dddd;
 }
+
