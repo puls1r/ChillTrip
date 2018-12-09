@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2018 at 07:53 PM
+-- Generation Time: Dec 09, 2018 at 10:29 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -62,6 +62,7 @@ CREATE TABLE `bill` (
 
 CREATE TABLE `destinasi` (
   `id_destinasi` varchar(12) NOT NULL,
+  `deskripsi` varchar(250) NOT NULL,
   `harga` int(12) NOT NULL,
   `tempat` varchar(20) NOT NULL,
   `tanggal` date NOT NULL
