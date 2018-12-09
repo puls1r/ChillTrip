@@ -1,0 +1,36 @@
+.form-reg{
+	border:solid 2px;
+	width:70%;
+	margin: auto;
+	padding:15px;
+	background-color:white;
+}
+
+.form-reg input{
+	display:block;
+	margin:auto;
+	padding:10px;
+	margin-bottom:20px;
+	margin-top:20px;
+	border: solid 0.5px #dcdcdc;
+	border-radius: 3px;
+}
+
+.form-reg input[type="submit"]{
+	width: 339px;
+	color:white;
+	background-color: #34dddd;
+	border:none;
+}
+.form-reg input[type="submit"]:hover{
+	background-color:#209aa4;
+}
+
+.form-reg p{
+	margin:auto;
+	width:339px;
+	text-align:center;
+	color:grey;
+	font-size:12px;
+	
+}
