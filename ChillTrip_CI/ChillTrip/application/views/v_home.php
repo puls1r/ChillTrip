@@ -15,15 +15,15 @@
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">Chill <span style="color:#c12500">Trip<span></a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('home') ?>" class="active" style="padding:10px">Home</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('trip') ?>" style="padding:10px">Trip</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('schedule') ?>" style="padding:10px">Schedule</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('chart') ?>" style="padding:10px">Chart</a></div>
+		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">login session</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('login') ?>"style="padding:10px">Login</a></div>
 	</div>
-	<div class="intro row" style= background-color:#34dddd>
-	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><img src="<?php echo base_url() ?>assets/img/indah.png" alt="Logo" style="height:250px; width:250x;"></div>
+	<div class="intro row" style= background-color:#dfdce3>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><img src="<?php echo base_url() ?>assets/img/icon.png" alt="Logo" style="height:250px; width:250x;"></div>
 	<div class="text col-sm-8 col-xs-8 col-md-8 col-lg-8"><img class="logo" src="<?php echo base_url() ?>assets/img/logo/chillTrip_logo.png">
-<p style="color:#c12500">"We Chill Every Trip:)"</p>
-	<p>Find the best deal for every trip you want!</p></div>
+<p style="color:#fc4a1a">"We Chill Every Trip:)"</p>
+	<p style="color:#f78733">Find the best deal for every trip you want!</p></div>
 	</div>
 	<div class="how row" style="margin:0">
 	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin:0;"><h1 style="text-align:center">How to Chill With us</h1>

@@ -14,8 +14,8 @@
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">Chill <span style="color:#c12500">Trip<span></a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('home') ?>" style="padding:10px">Home</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('trip') ?>" class="active" style="padding:10px">Trip</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('schedule') ?>" style="padding:10px">Schedule</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('chart') ?>" style="padding:10px">Chart</a></div>
+		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px"></a>login session</div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('login') ?>"style="padding:10px">Login</a></div>
 	</div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
