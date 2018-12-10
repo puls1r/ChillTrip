@@ -39,7 +39,7 @@
 	</div>
 	<div class="row" style="margin:0">
 		<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">
-			<footer class="footer-mini" style=""><span style="color:grey">&copy; 2018, Chill Trip</span> </footer>
+			<footer class="footer-mini" style="position:static"><span style="color:grey">&copy; 2018, Chill Trip</span> </footer>
 		</div>
 	</div>
 </div>
