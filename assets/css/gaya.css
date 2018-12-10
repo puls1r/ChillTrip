@@ -12,15 +12,16 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fffdf5;
+    background-color: white;
 	border: none;
 	border-bottom: solid #eaeaeb 0.5px;
+	box-shadow: 0 1px 2px 0 rgba(184, 184, 184, 0.2), 0 3px 4px 0 rgba(184, 184, 184, 0.1), 0 5px 6px 0 rgba(184, 184, 184, 0.05);
+
 }
 .navbar span {
 	display:inline;
 	color:white;
 	font-size:15px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .nav{
 	padding:0;
@@ -37,13 +38,12 @@ body {
 	}
 	
 .nav a.active {
-	color: #0fb287;
+	color: #34dddd;
 	border:none;
-	border-bottom: solid #0fb287 0.5px;
 }
 .intro {
 	margin: 10px;
-	background-color: #eaded2;
+	background-color: #34dddd;
 }
 
 .intro div {
