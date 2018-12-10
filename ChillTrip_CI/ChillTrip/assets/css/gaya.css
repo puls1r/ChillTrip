@@ -20,7 +20,6 @@ body {
 	display:inline;
 	color:white;
 	font-size:15px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .nav{
 	padding:0;
@@ -37,9 +36,9 @@ body {
 	}
 	
 .nav a.active {
-	color: #0fb287;
+	color: #34dddd;
 	border:none;
-	border-bottom: solid #0fb287 0.5px;
+	border-bottom: solid #34dddd 0.5px;
 }
 .intro {
 	margin: 10px;
