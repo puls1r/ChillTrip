@@ -15,18 +15,28 @@
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('home') ?>" style="padding:10px">Home</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('trip') ?>" class="active" style="padding:10px">Trip</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('chart') ?>" style="padding:10px">Chart</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px"></a>login session</div>
+		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">login session</a></div>
 		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('login') ?>"style="padding:10px">Login</a></div>
 	</div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
 	<div class="row">
-		<div class="nav col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
-		<div class="nav col-sm-7 col-xs-7 col-md-7 col-lg-7"><img class="center" src="<?php echo base_url() ?>assets/img/bandung.jpg" alt="Logo" style="height:500px; width:730px;padding:5px"></div>
-		<div class="nav col-sm-3 col-xs-3 col-md-3 col-lg-3">
-			<div class="row"><div class="nav col-sm-12 col-xs-12 col-md-12 col-lg-12"><img class="center" src="<?php echo base_url() ?>assets/img/wonosobo.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></div></div>
-			<div class="row"><div class="nav col-sm-12 col-xs-12 col-md-12 col-lg-12"><img class="center" src="<?php echo base_url() ?>assets/img/seribu.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></div></div>	
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+		<div class="col-sm-7 col-xs-7 col-md-7 col-lg-7"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/bandung.jpg" alt="Logo" style="height:500px; width:730px;padding:5px"><a></div>
+		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+			<div class="row"><div class="nav col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/wonosobo.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
+			</div></div>
+			<div class="row"><div class="nav col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/seribu.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
+			</div></div>	
 		</div>
-		<div class="nav col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+	</div>
+	<h1 style="margin-top:40px;margin-left:100px">Other Beautiful City You might Like</h1>
+	<div class="row">
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"><a href="a"><img class="center" src="<?php echo base_url() ?>assets/img/logo.png" alt="Logo" style="height:250px; width:340px;padding:5px"></a></div>
+		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3" style="margin-left:40px"><a href="b"><img class="center" src="<?php echo base_url() ?>assets/img/logo.png" alt="Logo" style="height:250px;width:340px;padding:5px"></a></div>
+		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3" style="margin-left:40px"><a href="c"><img class="center" src="<?php echo base_url() ?>assets/img/logo.png" alt="Logo" style="height:250px;width:340px;padding:5px"></a></div>
+		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
 	</div>
 	<div class="row" style="margin:0">
 	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">
