@@ -14,27 +14,30 @@
 <body>
 <div class="container-fluid" style="padding:0;margin:0">
 	<div class="navbar row">
-        <div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">Chill <span style="color:#c12500">Trip<span></a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('home') ?>"  style="padding:10px">Home</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('trip') ?>" style="padding:10px">Trip</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('chart') ?>" class="active" style="padding:10px">Chart</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">login session</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('login') ?>"style="padding:10px">Login</a></div>
+		<div class="nav col-md-3 col-lg-3">
+			<p style="font-size:30px;margin:auto;margin-left:70px;margin-top:;color:#34dddd">Chill Trip</p>
+		</div>
+		<div class="nav col-md-3 col-lg-3"></div>
+		<div class="nav col-md-4 col-lg-4">
+			<div class="row">
+			<div class="col-md-3 col-lg-3"></div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;margin-left:-7px;text-align:center"><a href="<?php echo site_url('home') ?>">Home</a></p>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('trip') ?>">Trip</a></p>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;margin-bottom:10px;text-align:center"><a href="<?php echo site_url('chart') ?>" class="active">Chart</a></p>
+			</div>
+			<div class="col-md-3 col-lg-2"></div>
+			</div>
+		</div>
+		<div class="nav col-md-2 col-lg-2">
+			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login</i></a></p>
+		</div>	
 	</div>
-    <h2 style="text-align:left; margin-left:100px;">Your Chill Trip Chart</h2>
-    <section class="container">
-        <p>Transfer to</p>
-  <div class="dropdown">
-  <select name="bank" class="dropdown-select">
-      <option value="">Select Bank…</option>
-      <option value="bni">BNI</option>
-      <option value="mandiri">Mandiri</option>
-      <option value="bri">BRI</option>
-      <option value="bca">BCA</option>
-    </select>
-  </div>
-</section>
-	<div class="invoice-box">
+	<div class="invoice-box" style="margin-top:70px">
         <table cellpadding="0" cellspacing="0">
             <tr class="top">
                 <td colspan="2">
@@ -126,6 +129,7 @@
         </table>
 
     </div>
+	
 </div>
 <div class="row" style="margin:0">
 	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">

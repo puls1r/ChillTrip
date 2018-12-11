@@ -11,12 +11,28 @@
 <body>
 <div class="container-fluid" style="padding:0;margin:0">
 	<div class="navbar row">
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">Chill <span style="color:#c12500">Trip<span></a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('home') ?>" style="padding:10px">Home</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('trip') ?>" class="active" style="padding:10px">Trip</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('chart') ?>" style="padding:10px">Chart</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a style="padding:10px">login session</a></div>
-		<div class="nav col-sm-2 col-xs-2 col-md-2 col-lg-2"><a href="<?php echo site_url('login') ?>"style="padding:10px">Login</a></div>
+		<div class="nav col-md-3 col-lg-3">
+			<p style="font-size:30px;margin:auto;margin-left:70px;margin-top:;color:#34dddd">Chill Trip</p>
+		</div>
+		<div class="nav col-md-3 col-lg-3"></div>
+		<div class="nav col-md-4 col-lg-4">
+			<div class="row">
+			<div class="col-md-3 col-lg-3"></div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;margin-left:-7px;text-align:center"><a href="<?php echo site_url('home') ?>">Home</a></p>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('trip') ?>" class="active">Trip</a></p>
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<p style="margin:auto;margin-top:10px;margin-bottom:10px;text-align:center"><a href="<?php echo site_url('chart') ?>">Chart</a></p>
+			</div>
+			<div class="col-md-3 col-lg-2"></div>
+			</div>
+		</div>
+		<div class="nav col-md-2 col-lg-2">
+			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login</a></p>
+		</div>	
 	</div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
 	<div class="row">
