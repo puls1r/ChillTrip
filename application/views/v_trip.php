@@ -27,11 +27,14 @@
 			<div class="col-md-2 col-lg-2">
 				<p style="margin:auto;margin-top:10px;margin-bottom:10px;text-align:center"><a href="<?php echo site_url('chart') ?>">Chart</a></p>
 			</div>
-			<div class="col-md-3 col-lg-2"></div>
+			<div class="col-md-3 col-lg-3"></div>
 			</div>
 		</div>
 		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p>
+			<div class="row">
+			<div class="col-md-7 col-lg-7"><p style="margin:auto;margin-top:10px;text-align:center">Hanif</p></div>
+			<div class="col-md-5 col-lg-5"><p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p></div>
+			</div>
 		</div>	
 	</div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
