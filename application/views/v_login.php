@@ -5,7 +5,6 @@
 <link href="<?php echo base_url() ?>assets/bootstrap-4.1.3-dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/gaya.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/footer.css" rel ="stylesheet" type="text/css">
-<link href="<?php echo base_url() ?>assets/css/form.css" rel ="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/checkbox.css" rel ="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -28,15 +27,17 @@
 			</div>
 			<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="background-color:white;">
 				<div class="form-login">
+				<?php echo form_open('login') ?> 
 					<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
 					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="<?php echo site_url('register') ?>">Register</a></p>
-					<input type="text" placeholder="Username" name="username" size="50"><br>
-					<input type="password" placeholder="Password" name="pw" size="50">
+					<input type="text" placeholder="Username" name="username" value="<?php echo set_value('username'); ?>" size="50"><br>
+					<input type="password" placeholder="Password" name="password" value="<?php echo set_value('password'); ?>" size="50">
 					<div class="row">
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><label class="rememberme box">Remember me<input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><a class="a-decor" style="margin-top:24px;font-size:12px">Forget your password?</a></div>
 					</div>
 					<input type="submit" name="submit" value="Sign in">
+				</form>
 					<p style="text-align:center;color:grey">or login with</p>
 					<div class="row">
 						<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"></div>

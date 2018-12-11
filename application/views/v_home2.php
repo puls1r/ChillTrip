@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chill Trip | Trip</title>
+<title>Chill Trip | Home</title>
 <link href="<?php echo base_url() ?>assets/bootstrap-4.1.3-dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/gaya.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/footer.css" rel ="stylesheet" type="text/css">
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 
@@ -19,10 +20,10 @@
 			<div class="row">
 			<div class="col-md-3 col-lg-3"></div>
 			<div class="col-md-2 col-lg-2">
-				<p style="margin:auto;margin-top:10px;margin-left:-7px;text-align:center"><a href="<?php echo site_url('home') ?>">Home</a></p>
+				<p style="margin:auto;margin-top:10px;margin-left:-7px;text-align:center"><a href="<?php echo site_url('home') ?>" class="active">Home</a></p>
 			</div>
 			<div class="col-md-2 col-lg-2">
-				<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('trip') ?>" class="active">Trip</a></p>
+				<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('trip') ?>">Trip</a></p>
 			</div>
 			<div class="col-md-2 col-lg-2">
 				<p style="margin:auto;margin-top:10px;margin-bottom:10px;text-align:center"><a href="<?php echo site_url('chart') ?>">Chart</a></p>
@@ -31,28 +32,47 @@
 			</div>
 		</div>
 		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login</a></p>
+			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login/logout') ?>"><?php echo ucfirst($this->session->userdata('username')); ?></a></p>
 		</div>	
 	</div>
-	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
-	<div class="row">
-		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
-		<div class="col-sm-7 col-xs-7 col-md-7 col-lg-7"><a href="<?php echo site_url('bandung') ?>"><img class="center" src="<?php echo base_url() ?>assets/img/bandung.jpg" alt="Logo" style="height:500px; width:730px;padding:5px"></a></div>
-		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
-			<div class="row"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/wonosobo.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
-			</div></div>
-			<div class="row"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/seribu.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
-			</div></div>	
-		</div>
-		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+	<div class="intro row">
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><img src="<?php echo base_url() ?>assets/img/icon.png" alt="Logo" style="height:250px; width:250x;"></div>
+	<div class="text col-sm-8 col-xs-8 col-md-8 col-lg-8"><img class="logo" src="<?php echo base_url() ?>assets/img/logo/chillTrip_logo.png">
+	<p style="color:white"><b>"We Chill Every Trip:)"</b></p>
+	<p style="color:white">Find the best deal for every trip you want!</p></div>
 	</div>
-	<h1 style="margin-top:40px;margin-left:100px">Other Beautiful City You might Like</h1>
-	<div class="row">
-		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
-		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"><a href="a"><img class="center" src="<?php echo base_url() ?>assets/img/yogya.jpg" alt="Logo" style="height:250px; width:340px;padding:5px"></a></div>
-		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3" style="margin-left:40px"><a href="b"><img class="center" src="<?php echo base_url() ?>assets/img/bali.jpg" alt="Logo" style="height:250px;width:340px;padding:5px"></a></div>
-		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3" style="margin-left:40px"><a href="c"><img class="center" src="<?php echo base_url() ?>assets/img/ampat.jpg" alt="Logo" style="height:250px;width:340px;padding:5px"></a></div>
-		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+	<div class="how row" style="margin:0">
+	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="margin:0;"><h1 style="text-align:center">How to Chill With us</h1>
+	<table class="spacing" cellpadding="2px">
+	<tr>
+		<td>1. </td><td>Create an account.</td>
+	</tr>
+	<tr>
+		<td></td><td>Click <a style="color:#34dddd"href="<?php echo site_url('register') ?>">here</a> to create an account</td>
+	</tr>
+	<tr>
+		<td><br>2. </td><td><br>Go to "Trip"</td>
+	</tr>
+	<tr>
+		<td><br>3. </td><td><br>Choose your destination</td>
+	</tr>
+	<tr>
+		<td></td><td>and your holiday date</td>
+	</tr>
+	<tr>
+		<td><br>4. </td><td><br>Book your chill trip</td>
+	</tr>
+	<tr>
+		<td><br>5. </td><td><br>Go to "Chart" and make the payment</td>
+	</tr>
+	<tr>
+		<td><br>6. </td><td><br>Print the payment invoice</td>
+	</tr>
+	<tr>
+		<td><br>7. </td><td><br>Receive Your E-Ticket</td>
+	</tr>
+	</table>
+	</div>
 	</div>
 	<div class="row" style="margin:0">
 	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">
@@ -109,4 +129,6 @@
 		</div>
 </div>
 </body>
+
+
 </html>

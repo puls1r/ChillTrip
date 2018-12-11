@@ -5,13 +5,34 @@ class Register extends CI_Controller {
 	
 	function __construct(){
 		parent::__construct();
-		$this->load->helper('url');
+		$this->load->library(array('form_validation'));
+         $this->load->helper(array('url','form'));
+         $this->load->model('m_account'); //call model
 	}
  
 	public function index(){		
-		$data['judul'] = "daftar";
-		$this->load->view('v_register',$data);
-	}
-	
+		$this->form_validation->set_rules('name', 'Name','required');
+         $this->form_validation->set_rules('username', 'Username','required');
+         $this->form_validation->set_rules('email','Email','required|valid_email');
+		 $this->form_validation->set_rules('hp','HP','required');
+         $this->form_validation->set_rules('password','Password','required');
+         $this->form_validation->set_rules('confirmpassword','Password','required|matches[password]');
+         if($this->form_validation->run() == FALSE) {
+             $this->load->view('v_register');
+         }
+		 else{
  
-}
+             $data['name']   =    $this->input->post('name');
+             $data['username'] =    $this->input->post('username');
+             $data['email']  =    $this->input->post('email');
+			 $data['hp']   =    $this->input->post('hp');
+             $data['password'] =    md5($this->input->post('password'));
+ 
+             $this->m_account->daftar($data);
+             
+             $pesan['message'] =    "Register Success!";
+             
+             $this->load->view('v_home',$pesan);
+         }
+     }
+ }
