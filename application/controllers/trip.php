@@ -5,7 +5,9 @@ class Trip extends CI_Controller {
 	
     function __construct(){
 		parent::__construct();
+		$this->simple_login->cek_login();
 		$this->load->helper('url');
+		
 	}
     public function index(){		
 		$data['judul'] = "Halaman trip";

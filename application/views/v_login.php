@@ -29,14 +29,20 @@
 				<div class="form-login">
 				<?php echo form_open('login') ?> 
 					<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
+					<p> <?php echo $this->session->flashdata('belum'); ?> </p>
 					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="<?php echo site_url('register') ?>">Register</a></p>
+					<?php echo form_open('login');?>
+					<p> <?php echo $this->session->flashdata('invalid'); ?> </p>
 					<input type="text" placeholder="Username" name="username" value="<?php echo set_value('username'); ?>" size="50"><br>
+					<p> <?php echo form_error('username'); ?> </p>
 					<input type="password" placeholder="Password" name="password" value="<?php echo set_value('password'); ?>" size="50">
+					<p> <?php echo form_error('password'); ?> </p>
 					<div class="row">
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><label class="rememberme box">Remember me<input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><a class="a-decor" style="margin-top:24px;font-size:12px">Forget your password?</a></div>
 					</div>
 					<input type="submit" name="submit" value="Sign in">
+					<?php echo form_close();?>
 				</form>
 					<p style="text-align:center;color:grey">or login with</p>
 					<div class="row">

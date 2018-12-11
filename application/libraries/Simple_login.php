@@ -45,14 +45,14 @@
              $this->CI->session->set_userdata('id', $id);
  
              //redirect ke halaman home
-             redirect(site_url('v_home'));
+             redirect(site_url('trip'));
          }else{
  
              //jika tidak ada, set notifikasi dalam flashdata.
-             $this->CI->session->set_flashdata('sukses','Invalid Username or password ');
+             $this->CI->session->set_flashdata('invalid','Invalid Username or password ');
  
              //redirect ke halaman login
-             redirect(site_url('v_login'));
+             redirect(site_url('login'));
          }
           return false;
       }
@@ -67,10 +67,10 @@
          if($this->CI->session->userdata('username') == '') {
  
              //set notifikasi
-             $this->CI->session->set_flashdata('sukses','Anda belum login');
+             $this->CI->session->set_flashdata('belum','Anda harus login terlebih dahulu');
  
              //alihkan ke halaman login
-             redirect(site_url('home2'));
+             redirect(site_url('login'));
          }
      }
  
