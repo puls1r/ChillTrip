@@ -54,7 +54,20 @@
 						<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"><p style="margin:0">Total :</p><h2 style="margin-top:2px">Rp. 300.000</h2></div>
 					</div>
 				</div>				
-			</div>	
+			</div>
+			<div class="row">
+				<div class="paket col-sm-12 col-xs-12 col-md-12 col-lg-12">
+					<h4 style="margin:0;color:grey">Translok</h4>
+					<h6 style="margin-top:2px;color:grey">Super Executive</h6>
+					<div class="row">
+						<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"><p style="color:grey;margin:0"><b>06.00</b></p><p style="color:grey;margin:0;margin-top:3px">Ciater</p></div>
+						<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"><p style="color:grey;margin:0"><b>08.00</b></p><p style="color:grey;margin:0;margin-top:3px">Kawah Putih</p></div>
+						<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"><p style="color:grey;margin:0"><b>12.00</b></p><p style="color:grey;margin:0;margin-top:3px">Dago</p></div>
+						<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"></div>
+						<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3"><p style="margin:0">Total :</p><h2 style="margin-top:2px">Rp. 340.000</h2></div>
+					</div>
+				</div>				
+			</div>		
 		</div>
 		<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"></div>
 	</div>

@@ -4,3 +4,9 @@
 	padding:15px;
 	border-radius:3px;
 }
+
+.paket:hover{
+	box-shadow: 
+	0 0 5px 1px #dadedf,
+	0 0 6px 2px #cffeec;
+}
