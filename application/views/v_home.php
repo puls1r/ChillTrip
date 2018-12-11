@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Chill Trip | Home</title>
+
 <link href="<?php echo base_url() ?>assets/bootstrap-4.1.3-dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/gaya.css" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url() ?>assets/css/footer.css" rel ="stylesheet" type="text/css">
@@ -32,7 +33,7 @@
 			</div>
 		</div>
 		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login</a></p>
+			<p style="margin:auto;margin-top:10px;text-align:center"><a><?php echo anchor('login/cekin','Login'); ?></a></p>
 		</div>	
 	</div>
 	<div class="intro row">

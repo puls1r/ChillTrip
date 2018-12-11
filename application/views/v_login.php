@@ -31,6 +31,7 @@
 					<h2 style="text-align:center;margin-bottom:2px">Sign in</h2>
 					<p style="text-align:center;font-size:12px">Don't have an account? <a class="a-decor" href="<?php echo site_url('register') ?>">Register</a></p>
 					<div class="alert"> <p><?php echo $this->session->flashdata('belum'); ?></p> </div>
+					<div class="alert2"> <p><?php echo $this->session->flashdata('oke'); ?></p> </div>
 					<?php echo form_open('login');?>
 					<p class="invalid"> <?php echo $this->session->flashdata('invalid'); ?> </p>
 					<input type="text" placeholder="Username" name="username" value="<?php echo set_value('username'); ?>" size="50">

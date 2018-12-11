@@ -32,11 +32,12 @@
 		</div>
 		<div class="nav col-md-2 col-lg-2">
 			<div class="row">
-			<div class="col-md-7 col-lg-7"><p style="margin:auto;margin-top:10px;text-align:center">Hanif</p></div>
+			<div class="col-md-7 col-lg-7"><p style="margin:auto;margin-top:10px;text-align:center">Hello <?php echo ucfirst($this->session->userdata('username'));?> :)</p></div>
 			<div class="col-md-5 col-lg-5"><p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p></div>
 			</div>
 		</div>	
 	</div>
+	<div class="alert"> <p><?php echo $this->session->flashdata('sudah'); ?></p> </div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
 	<div class="row">
 		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>

@@ -7,7 +7,7 @@ class Register extends CI_Controller {
 		parent::__construct();
 		$this->load->library(array('form_validation'));
          $this->load->helper(array('url','form'));
-         $this->load->model('m_account'); //call model
+         $this->load->model('m_account');
 	}
  
 	public function index(){		
@@ -30,9 +30,10 @@ class Register extends CI_Controller {
  
              $this->m_account->daftar($data);
              
-             $pesan['message'] =    "Register Success!";
-             
-             $this->load->view('v_home',$pesan);
+            
+             $this->session->set_flashdata('oke','Registrasi berhasil , Silahkan Login');
+             $this->load->view('v_login');
+                
          }
      }
  }

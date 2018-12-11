@@ -1,12 +1,6 @@
 <?php
  defined('BASEPATH') OR exit('No direct script access allowed');
  
- /*
-  * Simple_login Class
-  * Class ini digunakan untuk fitur login, proteksi halaman dan logout
-  * @author  Gun Gun Priatna
-  * @url    https://recodeku.blogspot.com
-  */
  
  class Simple_login {
  
@@ -73,6 +67,27 @@
              redirect(site_url('login'));
          }
      }
+     public function telah() {
+ 
+        //cek session username
+        if($this->CI->session->userdata('username') == '') {
+            
+            redirect(site_url('login'));
+        }
+        else{
+            $this->CI->session->set_flashdata('sudah','Anda sudah login, silahkan logout untuk mengganti akun');
+ 
+             //alihkan ke halaman login
+             redirect(site_url('trip'));
+        }
+        
+
+        
+    }
+
+    public function maap(){
+        $this->CI->session->set_flashdata('sry','Mohon maaf menu pembayaran sedang dalam maintenance');
+    }
  
      /**
       * Hapus session, lalu set notifikasi kemudian di alihkan
