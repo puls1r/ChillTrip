@@ -125,6 +125,23 @@ body {
 .form-login input[type="checkbox"]{
 	display:inline;
 }
+
+div .kosong{
+	margin:0;
+	color:red;
+	font-size:11px;
+	margin-left:75px;
+	padding:2px;
+}
+div .alert{
+	background-color:#ffe9e9;
+	margin:auto;
+	color:grey;
+	font-size:15px;
+	text-align:center;
+	width:75%;
+	border-radius:3px;
+}
 .center {
 	display:block;
 	margin-left: auto;

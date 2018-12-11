@@ -24,7 +24,7 @@
 		<p style="text-align:center;font-size:19px;margin:0;color:white;margin-bottom:15px">Please create an account below to start using Chil Trip</p>
 				<div class="form-reg">
 				<?php echo form_open('register');?>
-				<p><input type="text" placeholder="Name" name="name" value="<?php echo set_value('name'); ?>" size="50px"></p>
+				<input type="text" placeholder="Name" name="name" value="<?php echo set_value('name'); ?>" size="50px">
 					<p> <?php echo form_error('name'); ?> </p>
 				<input type="text" placeholder="Username" name="username" value="<?php echo set_value('username'); ?>" size="50px">
 					<p> <?php echo form_error('username'); ?> </p>
@@ -36,7 +36,7 @@
 					<p> <?php echo form_error('password'); ?> </p>
 				<input type="password" placeholder="Confirm Password" name="confirmpassword" value="<?php echo set_value('confirmpassword'); ?>" size="50px">
 					<p> <?php echo form_error('confirmpassword'); ?> </p>
-				<p>By clicking Register, you agree to Chill Trip's <a style="color:black" href="#">User Agreement</a>, <a style="color:black" href="#">Privacy Policy</a>, and <a style="color:black" href="#">Cookie Policy</a></p>
+				<span>By clicking Register, you agree to Chill Trip's <a style="color:black" href="#">User Agreement</a>, <a style="color:black" href="#">Privacy Policy</a>, and <a style="color:black" href="#">Cookie Policy</a></span>
 				<input type="submit" name="register" value="Register">
 				<?php echo form_close();?>
 				</div>

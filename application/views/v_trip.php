@@ -31,11 +31,10 @@
 			</div>
 		</div>
 		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login</a></p>
+			<p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p>
 		</div>	
 	</div>
 	<h1 style="text-align:left; margin-left:100px;">Most Popular City</h1>
-	<?php echo anchor('login/logout','di sini...'); ?>
 	<div class="row">
 		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
 		<div class="col-sm-7 col-xs-7 col-md-7 col-lg-7"><a href="<?php echo site_url('bandung') ?>"><img class="center" src="<?php echo base_url() ?>assets/img/bandung.jpg" alt="Logo" style="height:500px; width:730px;padding:5px"></a></div>

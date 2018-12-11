@@ -13,7 +13,6 @@
 	display:block;
 	margin:auto;
 	padding:10px;
-	margin-bottom:20px;
 	margin-top:20px;
 	border: solid 0.5px #dcdcdc;
 	border-radius: 3px;
@@ -24,16 +23,26 @@
 	color:white;
 	background-color: #34dddd;
 	border:none;
+	margin-bottom:10px;
 }
 .form-reg input[type="submit"]:hover{
 	background-color:#209aa4;
 }
 
 .form-reg p{
+	margin:0;
+	color:red;
+	font-size:11px;
+	margin-left:25px;
+	padding:2px;
+}
+
+.form-reg span{
+	display:block;
 	margin:auto;
+	margin-top:10px;
 	width:339px;
 	text-align:center;
 	color:grey;
 	font-size:12px;
-	
 }
