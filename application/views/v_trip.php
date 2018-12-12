@@ -43,7 +43,7 @@
 		<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
 		<div class="col-sm-7 col-xs-7 col-md-7 col-lg-7"><a href="<?php echo site_url('bandung') ?>"><img class="center" src="<?php echo base_url() ?>assets/img/bandung.jpg" alt="Logo" style="height:500px; width:730px;padding:5px"></a></div>
 		<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
-			<div class="row"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/wonosobo.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
+			<div class="row"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="<?php echo site_url('wonosobo') ?>"><img class="center" src="<?php echo base_url() ?>assets/img/wonosobo.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
 			</div></div>
 			<div class="row"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"><a href="#"><img class="center" src="<?php echo base_url() ?>assets/img/seribu.jpg" alt="Logo" style="height:250px; width:315px;padding:5px"></a>
 			</div></div>	

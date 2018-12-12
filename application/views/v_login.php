@@ -33,7 +33,7 @@
 					<div class="alert"> <p><?php echo $this->session->flashdata('belum'); ?></p> </div>
 					<div class="alert2"> <p><?php echo $this->session->flashdata('oke'); ?></p> </div>
 					<?php echo form_open('login');?>
-					<p class="invalid"> <?php echo $this->session->flashdata('invalid'); ?> </p>
+					<div class="invalid"> <?php echo $this->session->flashdata('invalid'); ?> </div>
 					<input type="text" placeholder="Username" name="username" value="<?php echo set_value('username'); ?>" size="50">
 					<div class="kosong"><?php echo form_error('username'); ?></div>
 					<br><input type="password" placeholder="Password" name="password" value="<?php echo set_value('password'); ?>" size="50">
