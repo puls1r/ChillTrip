@@ -33,7 +33,10 @@
 			</div>
 		</div>
 		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login </a></p>
+		<div class="row">
+			<div class="col-md-7 col-lg-7"><p style="margin:auto;margin-top:10px;text-align:center">Hello <?php echo ucfirst($this->session->userdata('username'));?> :)</p></div>
+			<div class="col-md-5 col-lg-5"><p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p></div>
+			</div>
 		</div>	
 	</div>
 	<div class="row">
