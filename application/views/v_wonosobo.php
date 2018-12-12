@@ -17,11 +17,11 @@
 			<p style="font-size:30px;margin:auto;margin-left:70px;margin-top:;color:#34dddd">Chill Trip</p>
 		</div>
 		<div class="nav col-md-3 col-lg-3"></div>
-		<div class="nav col-md-4 col-lg-4">
+		<div class="nav col-md-3 col-lg-3">
 			<div class="row">
 			<div class="col-md-3 col-lg-3"></div>
 			<div class="col-md-2 col-lg-2">
-				<p style="margin:auto;margin-top:10px;margin-left:-7px;text-align:center"><a href="<?php echo site_url('home') ?>">Home</a></p>
+				<p style="margin:auto;margin-top:10px;margin-left:-15px;text-align:center"><a href="<?php echo site_url('home') ?>">Home</a></p>
 			</div>
 			<div class="col-md-2 col-lg-2">
 				<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('trip') ?>" class="active">Trip</a></p>
@@ -32,8 +32,11 @@
 			<div class="col-md-3 col-lg-2"></div>
 			</div>
 		</div>
-		<div class="nav col-md-2 col-lg-2">
-			<p style="margin:auto;margin-top:10px;text-align:center"><a href="<?php echo site_url('login') ?>">Login </a></p>
+		<div class="nav col-md-3 col-lg-3">
+		<div class="row">
+			<div class="col-md-7 col-lg-7"><p style="margin:auto;margin-top:10px;text-align:center">Hello <?php echo ucfirst($this->session->userdata('username'));?> :)</p></div>
+			<div class="col-md-5 col-lg-5"><p style="margin:auto;margin-top:10px;text-align:center"><?php echo anchor('login/logout','Logout'); ?></p></div>
+			</div>
 		</div>	
 	</div>
 	<div class="row">
