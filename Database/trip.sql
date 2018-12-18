@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2018 at 03:31 PM
--- Server version: 10.1.34-MariaDB
--- PHP Version: 7.2.7
+-- Generation Time: Dec 18, 2018 at 12:41 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,16 +30,15 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `id_admin` varchar(10) NOT NULL,
-  `pass` varchar(20) DEFAULT NULL,
-  `nama` varchar(40) NOT NULL
+  `pass` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id_admin`, `pass`, `nama`) VALUES
-('admin', 'admin', 'admin 1');
+INSERT INTO `admin` (`id_admin`, `pass`) VALUES
+('admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -62,10 +61,8 @@ CREATE TABLE `bill` (
 
 CREATE TABLE `destinasi` (
   `id_destinasi` varchar(12) NOT NULL,
-  `deskripsi` varchar(250) NOT NULL,
   `harga` int(12) NOT NULL,
-  `tempat` varchar(20) NOT NULL,
-  `tanggal` date NOT NULL
+  `tempat` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -100,14 +97,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `name`, `email`, `password`, `hp`) VALUES
-(1, 'nando123', 'nando', 'whatthefapmc@gmail.com', '26ba3e670c56526b34eec2e980a2cf57', 2147483647),
-(2, 'testhanif', 'hanif', 'nandorafi48@gmail.com', '45a9a31e5f1ff59621b681a5edbffe85', 89273),
-(3, 'rayhan', 'rayhan', 'h@mail.com', '26ba3e670c56526b34eec2e980a2cf57', 123891283),
-(4, 'nando67', 'uganda', 'nandoozone@yahoo.co.id', '81dc9bdb52d04dc20036dbd8313ed055', 8718273),
-(6, 'nanana', 'nini', 'keprof.himatif@gmail.com', '26ba3e670c56526b34eec2e980a2cf57', 4123123),
-(7, 'hanif', 'nando', 'ha@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 76876876),
-(8, 'kucing', 'kucing', 'kucing@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 13132),
-(9, 'haha', 'haha', '123@mail.com', '202cb962ac59075b964b07152d234b70', 1123);
+(19, '123', '1313', '1@mail.com', '202cb962ac59075b964b07152d234b70', 2147483647),
+(20, '34', '412421', 'q@gamil.com', '17e62166fc8586dfa4d1bc0e1742c08b', 531513),
+(22, '78', 'Hanif Saya', 'haniefm12@gmail.com', '35f4a8d465e6e1edc05f3d8ab658c551', 2313),
+(23, 'Rizalsalsaputus', 'Rizal', 'rizal@mail.com', '35da1662bcb17835467ee42e350cfc27', 2147483647);
 
 --
 -- Indexes for dumped tables
@@ -153,7 +146,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
