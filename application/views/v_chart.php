@@ -8,7 +8,9 @@
 <link href="<?php echo base_url() ?>assets/css/chart.css" rel ="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+<script>
+	
+</script>
 </head>
 
 <body>
@@ -40,8 +42,7 @@
             </div>
 		</div>	
 	</div>
-    <div class="alert"> <p><?php echo $this->session->flashdata('sry'); ?></p> </div>
-	<div class="invoice-box" style="margin-top:70px">
+    <div class="invoice-box" style="margin-top:70px">
         <table cellpadding="0" cellspacing="0">
             <tr class="top">
                 <td colspan="2">
@@ -72,7 +73,6 @@
                                 Blok B5 no. 17, Jatinangor
                             </td>
                             <td>
-                                <?php echo $username ?><br>
                                 <?php echo $name ?><br>
                                 <?php echo $email ?>
                             </td>
@@ -85,15 +85,22 @@
                     Payment Method
                 </td>
                 <td>
-                    Transfer
+                    Transfer To :
                 </td>
             </tr>
             <tr class="details">
                 <td>
-                    Php bank yg dipilih
+                    <div style="width:200px;">
+						<select id="bank" onchange="Rekening();">
+							<option disabled selected>Select Bank</option>
+							<option value="013089783">BNI</option>
+							<option value="032001093">Mandiri</option>
+							<option value="050384002">BRI</option>
+						</select>
+					</div>
                 </td>
                 <td>
-                    php rekening bank
+                    <p id="rekening"></p>
                 </td>
             </tr>
             <tr class="heading">
@@ -107,10 +114,10 @@
             </tr>
             <tr class="item">
                 <td>
-                    php code trip
+                    <?php echo $tempat?>
                 </td>
                 <td>
-                    $<?php echo $harga ?>
+                    Rp. <?php echo $harga ?>
                 </td>
             </tr>
             <tr class="heading">
@@ -119,14 +126,14 @@
                 </td>
                 
                 <td>
-                    php total pax
+                    <?php echo $pax ?> Orang
                 </td>
             </tr>
             <tr class="total">
 
-                <td></td>
+                <td>Total</td>
                 <td>
-                   Total: php pax dikali price
+                   Rp. <?php echo ($pax*$harga)?>
                 </td>
 
             </tr>
@@ -190,4 +197,5 @@
 		</div>
 		</div>
 </body>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/chart.js" ></script>
 </html>

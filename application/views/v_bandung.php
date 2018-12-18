@@ -49,7 +49,7 @@
 	<div class="row">
 		<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"></div>
 		<div class="col-sm-8 col-xs-8 col-md-8 col-lg-8" style="border:none;border-top:solid 1px grey">
-			<a class="row" href="<?php echo base_url('index.php/chart/getView/dest1'); ?>">
+			<a class="box-paket row" href="<?php echo base_url('index.php/chart/getView/dest1'); ?>">
 				<div class="paket col-sm-12 col-xs-12 col-md-12 col-lg-12">
 					<h4 style="margin:0;color:grey">ABC Travel</h4>
 					<h6 style="margin-top:2px;color:grey">Executive</h6>

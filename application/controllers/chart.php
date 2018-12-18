@@ -21,6 +21,7 @@ class Chart extends CI_Controller {
 		$data['id_user'] = "-";
 		$data['name'] = "-";
 		$data['email'] = "-";
+		$data['pax'] = "-";
 		$this->load->view('v_chart', $data);
 	}
 	
@@ -32,6 +33,7 @@ class Chart extends CI_Controller {
 			$data['harga'] = $row->harga;
 			$data['tempat'] = $row->tempat;
 			$data['tanggal'] = $row->tanggal;
+			$data['pax'] = $row->pax;
 		}
 		$idUser = $this->session->id;
 		$dataUser = $this->M_chart->getUser($idUser);
