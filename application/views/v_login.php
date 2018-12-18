@@ -41,10 +41,12 @@
 					<div class="row">
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><label class="rememberme box">Remember me<input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
 						<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6"><a class="a-decor" style="margin-top:24px;font-size:12px">Forget your password?</a></div>
+					
 					</div>
+					
 					<input type="submit" name="submit" value="Sign in">
 					<?php echo form_close();?>
-				</form>
+				</form>	
 					<p style="text-align:center;color:grey">or login with</p>
 					<div class="row">
 						<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2"></div>
@@ -72,7 +74,8 @@
 	</div>
 	<div class="row" style="margin:0">
 		<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0">
-			<footer class="footer-mini" style=""><span style="color:grey">&copy; 2018, Chill Trip</span> </footer>
+			<footer class="footer-mini" style=""><span style="color:grey">&copy; 2018, Chill Trip <a href="<?php echo site_url('admin') ?>" > login as admin</a> </span> 
+			 </footer>
 		</div>
 	</div>
 </div>

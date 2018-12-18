@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2018 at 12:41 PM
+-- Generation Time: Dec 18, 2018 at 01:35 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -21,24 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `trip`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `id_admin` varchar(10) NOT NULL,
-  `pass` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`id_admin`, `pass`) VALUES
-('admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -102,15 +84,28 @@ INSERT INTO `user` (`id_user`, `username`, `name`, `email`, `password`, `hp`) VA
 (22, '78', 'Hanif Saya', 'haniefm12@gmail.com', '35f4a8d465e6e1edc05f3d8ab658c551', 2313),
 (23, 'Rizalsalsaputus', 'Rizal', 'rizal@mail.com', '35da1662bcb17835467ee42e350cfc27', 2147483647);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `_admin`
+--
+
+CREATE TABLE `_admin` (
+  `id` int(11) NOT NULL,
+  `id_admin` varchar(10) NOT NULL,
+  `pass` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `_admin`
+--
+
+INSERT INTO `_admin` (`id`, `id_admin`, `pass`) VALUES
+(1, 'admin', 'admin');
+
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id_admin`);
 
 --
 -- Indexes for table `bill`
@@ -139,6 +134,12 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `username` (`username`);
 
 --
+-- Indexes for table `_admin`
+--
+ALTER TABLE `_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -147,6 +148,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT for table `_admin`
+--
+ALTER TABLE `_admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

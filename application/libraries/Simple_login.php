@@ -100,4 +100,42 @@
          $this->CI->session->set_flashdata('sukses','Logout sukses');
          redirect(site_url('login'));
      }
+
+     public function admin_login($username, $password) {
+         
+        //cek username dan password
+        $query = $this->CI->db->get_where('_admin',array('id_admin'=>$username,'pass' => $password));
+    
+        if($query->num_rows() == 1) {
+            //ambil data user berdasar username
+            $row  = $this->CI->db->query('SELECT id FROM _admin where id_admin = "'.$username.'"');
+            $admin     = $row->row();
+            $id   = $admin->id;
+    
+            //set session user
+            $this->CI->session->set_userdata('id_admin', $username);
+            $this->CI->session->set_userdata('id_login', uniqid(rand()));
+            $this->CI->session->set_userdata('id', $id);
+    
+            //redirect ke halaman home
+            redirect(site_url('admin_home'));
+        }else{
+    
+            //jika tidak ada, set notifikasi dalam flashdata.
+            $this->CI->session->set_flashdata('invalid','Invalid Username or password ');
+    
+            //redirect ke halaman login
+            redirect(site_url('admin'));
+        }
+         return false;
+     }
+     public function logout_admin() {
+        $this->CI->session->unset_userdata('id_admin');
+        $this->CI->session->unset_userdata('id_login');
+        $this->CI->session->unset_userdata('id');
+        $this->CI->session->set_flashdata('sukses','Logout sukses');
+        redirect(site_url('login'));
+    }
  }
+
+ 
