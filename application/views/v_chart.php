@@ -52,7 +52,8 @@
                             </td>
                             <td>
                                 <br>
-                                Invoice #: (id_bill) <br>
+								
+                                Invoice #: <?php echo $id_dest ?> <br>
                                 <?php echo date('l,d-m-Y') ?><br>
                                 <?php date_default_timezone_set("Asia/Bangkok");
                                 echo date("H:i a"); ?>
@@ -71,9 +72,9 @@
                                 Blok B5 no. 17, Jatinangor
                             </td>
                             <td>
-                                Php user name<br>
-                                php name pembeli<br>
-                                php email pembeli
+                                <?php echo $username ?><br>
+                                <?php echo $name ?><br>
+                                <?php echo $email ?>
                             </td>
                         </tr>
                     </table>
@@ -97,7 +98,7 @@
             </tr>
             <tr class="heading">
                 <td>
-                    Code Trip
+                    Tujuan
                 </td>
                 
                 <td>
@@ -109,7 +110,7 @@
                     php code trip
                 </td>
                 <td>
-                    $300.00
+                    $<?php echo $harga ?>
                 </td>
             </tr>
             <tr class="heading">
