@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2018 at 01:35 PM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Generation Time: Dec 18, 2018 at 06:15 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,15 +25,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bill`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `bill` (
-  `id_bill` varchar(20) NOT NULL,
-  `pax` int(3) DEFAULT NULL,
-  `no_rek` int(20) DEFAULT NULL,
-  `total` int(12) NOT NULL
+CREATE TABLE `admin` (
+  `id_admin` varchar(10) NOT NULL,
+  `pass` varchar(20) DEFAULT NULL,
+  `nama` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id_admin`, `pass`, `nama`) VALUES
+('admin', 'admin', 'admin 1');
 
 -- --------------------------------------------------------
 
@@ -43,9 +49,19 @@ CREATE TABLE `bill` (
 
 CREATE TABLE `destinasi` (
   `id_destinasi` varchar(12) NOT NULL,
+  `deskripsi` varchar(250) NOT NULL,
   `harga` int(12) NOT NULL,
-  `tempat` varchar(20) NOT NULL
+  `tempat` varchar(20) NOT NULL,
+  `tanggal` date NOT NULL,
+  `pax` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `destinasi`
+--
+
+INSERT INTO `destinasi` (`id_destinasi`, `deskripsi`, `harga`, `tempat`, `tanggal`, `pax`) VALUES
+('dest1', 'Buah Batu, Ciater, Tangkuban Perahu', 300000, 'Bandung', '2020-02-13', 2);
 
 -- --------------------------------------------------------
 
@@ -79,39 +95,26 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `name`, `email`, `password`, `hp`) VALUES
-(19, '123', '1313', '1@mail.com', '202cb962ac59075b964b07152d234b70', 2147483647),
-(20, '34', '412421', 'q@gamil.com', '17e62166fc8586dfa4d1bc0e1742c08b', 531513),
-(22, '78', 'Hanif Saya', 'haniefm12@gmail.com', '35f4a8d465e6e1edc05f3d8ab658c551', 2313),
-(23, 'Rizalsalsaputus', 'Rizal', 'rizal@mail.com', '35da1662bcb17835467ee42e350cfc27', 2147483647);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `_admin`
---
-
-CREATE TABLE `_admin` (
-  `id` int(11) NOT NULL,
-  `id_admin` varchar(10) NOT NULL,
-  `pass` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `_admin`
---
-
-INSERT INTO `_admin` (`id`, `id_admin`, `pass`) VALUES
-(1, 'admin', 'admin');
+(1, 'nando123', 'nando', 'whatthefapmc@gmail.com', '26ba3e670c56526b34eec2e980a2cf57', 2147483647),
+(2, 'testhanif', 'hanif', 'nandorafi48@gmail.com', '45a9a31e5f1ff59621b681a5edbffe85', 89273),
+(3, 'rayhan', 'rayhan', 'h@mail.com', '26ba3e670c56526b34eec2e980a2cf57', 123891283),
+(4, 'nando67', 'uganda', 'nandoozone@yahoo.co.id', '81dc9bdb52d04dc20036dbd8313ed055', 8718273),
+(6, 'nanana', 'nini', 'keprof.himatif@gmail.com', '26ba3e670c56526b34eec2e980a2cf57', 4123123),
+(7, 'hanif', 'nando', 'ha@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 76876876),
+(8, 'kucing', 'kucing', 'kucing@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 13132),
+(9, 'haha', 'haha', '123@mail.com', '202cb962ac59075b964b07152d234b70', 1123),
+(10, 'nandoo', 'Rafi', 'lili@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 87878787),
+(11, 'nand345', 'Nando', 'nando@mail.com', '81dc9bdb52d04dc20036dbd8313ed055', 2147483647);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `bill`
+-- Indexes for table `admin`
 --
-ALTER TABLE `bill`
-  ADD PRIMARY KEY (`id_bill`);
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id_admin`);
 
 --
 -- Indexes for table `destinasi`
@@ -134,12 +137,6 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- Indexes for table `_admin`
---
-ALTER TABLE `_admin`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -147,13 +144,7 @@ ALTER TABLE `_admin`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
---
--- AUTO_INCREMENT for table `_admin`
---
-ALTER TABLE `_admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
